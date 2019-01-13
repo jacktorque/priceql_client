@@ -3,10 +3,10 @@ import gql from "graphql-tag";
 export const HOME_PAGE = gql`
   {
     price(
-      delngDe: "20190111"
-      whsalCd: "360301"
+      delngDe: "20190112"
+      cprCd: "36030103"
       prdlstCd: "0804"
-      numOfRows: "200"
+      numOfRows: "100"
     ) {
       whsalMrktNewNm
       insttNewNm
