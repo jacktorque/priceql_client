@@ -19,9 +19,6 @@ class Home extends Component {
   onClick3 = () => this.setState({ cprCd: "36030103" });
 
   render() {
-    console.log(moment(this.state.date).format("YYYYMMDD"));
-    console.log(this.state.cprCd);
-
     return (
       <dvi>
         <DatePicker onChange={this.onChange} value={this.state.date} />
