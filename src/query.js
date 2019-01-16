@@ -1,10 +1,10 @@
 import gql from "graphql-tag";
 
 export const HOME_PAGE = gql`
-  {
+  query getPrice($delngDe: String!, $cprCd: String!) {
     price(
-      delngDe: "20190112"
-      cprCd: "36030103"
+      delngDe: $delngDe
+      cprCd: $cprCd
       prdlstCd: "0804"
       numOfRows: "100"
     ) {
